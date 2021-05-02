@@ -7,13 +7,12 @@ class problem1 {
 
     static Node head;
 
-
     static class Node {
 
         int data;
         Node next;
 
-        Node(int d) {
+        Node(int d) {   //constructor
             data = d;
             next = null;
         }
@@ -34,7 +33,7 @@ class problem1 {
         Node next = null;
 
         while(current != null){
-            next = current.next;
+            next = current.next;        //learn this!
             current.next = prev;
             prev = current;
             current = next;
@@ -42,6 +41,9 @@ class problem1 {
         node = prev;
         return node;
     }
+
+
+   
 
     //print content of double reversed linked list
     void printList(Node node)
@@ -53,7 +55,7 @@ class problem1 {
     }
 
 
-    static node recReverse(Node node){
+    static Node recReverse(Node node){
         if(node == null || node.next == null)
             return node;
 
