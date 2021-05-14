@@ -10,7 +10,7 @@ def isPalindrome(s):    #simple way
 
 def isPalindromeRecursive(s):
     s = s.lower()
-    l = len(s0)
+    l = len(s)
 
     if l < 2:
         return True
@@ -21,12 +21,12 @@ def isPalindromeRecursive(s):
 def isPalindr(s):
 
     for i in range(0, int(len(s)/2)):       #without using any extra space
-        if str[i] != str[len(s) - i - 1]:
+        if s[i] != s[len(s) - i - 1]:
             return False
 
     return True
 
-a = "malyalam"
+a = "malayalam"
 print(isPalindrome(a))
 print(isPalindromeRecursive(a)) 
 ans = isPalindr(a)      #Another way of printing output
