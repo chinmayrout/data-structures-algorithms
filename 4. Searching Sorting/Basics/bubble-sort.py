@@ -57,3 +57,20 @@ data1 = [-2, 43, 0, 12, -9]
 print("Original", data1)
 optimizedBubbleSort(data1)
 print(data1)
+
+
+'''
+TIME AND SPACE COMPLEXITY:
+Time Complexity	 
+Best	            O(n)
+Worst	            O(n2)
+Average	            O(n2)
+Space Complexity	O(1)
+Stability	        Yes
+
+USES:
+
+complexity does not matter
+short and simple code is preferred
+
+'''

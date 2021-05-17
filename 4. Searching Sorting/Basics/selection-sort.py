@@ -39,8 +39,4 @@ USES:
 - checking of all the elements is compulsory
 - cost of writing to a memory matters like in flash memory (number of writes/swaps is O(n) as compared to O(n2) of bubble sort)
 
-
-
-
-
 '''
