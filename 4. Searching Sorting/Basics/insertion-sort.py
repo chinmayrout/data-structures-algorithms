@@ -27,8 +27,8 @@ print(data)
 '''
 
 Time Complexity	 
-Best	O(n2)
-Worst	O(n)
+Best	O(n)
+Worst	O(n2)
 Average	O(n2)
 Space Complexity	O(1)
 Stability	Yes
@@ -37,5 +37,5 @@ Uses:
 - the array is has a small number of elements
 - there are only a few elements left to be sorted
 
-
+https://en.wikipedia.org/w/index.php?title=Insertion_sort&oldid=1022522065
 '''

@@ -70,7 +70,7 @@ Stability	        Yes
 
 USES:
 
-complexity does not matter
-short and simple code is preferred
-
+-complexity does not matter
+-short and simple code is preferred
+https://en.wikipedia.org/w/index.php?title=Bubble_sort&oldid=1018888337
 '''
