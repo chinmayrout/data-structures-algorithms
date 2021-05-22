@@ -24,8 +24,8 @@ class LinkedList:
     # Function to insert a new node at the beginning
     def push(self, new_data):
         new_node = Node(new_data)
-        new_node.next = self.head   #check this
-        self.head = new_node        #and thiss
+        new_node.next = self.head   # changing next-pointer of new_node to head pointer
+        self.head = new_node        # changing head pointer to the new_node
 
     #Utility function to print the linkedlist
     def printList(self):
@@ -53,7 +53,7 @@ class LinkedList:
         #         return 
 
         # Search for loop using slow and fast pointers
-        while (fast_p is not None):
+        while (fast_p is not None and slow_p is not None):
             if fast_p.next is None:
                 break
             if slow_p == fast_p:
@@ -78,11 +78,13 @@ llist.push(3)
 
 
 # Create a loop for testing
-# xllist.head.next.next.next = llist.head
+# llist.head.next.next.next = llist.head
 if (llist.detectLoop()):
     print("Found loop")
 
 else:
     print("No loop")
+
+llist.printList()
 
 
