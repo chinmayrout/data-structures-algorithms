@@ -1,4 +1,4 @@
-# Pre-order, Inorder, Post-Order Traversal of a tree both using recursion
+# DFS(Depth First Traversals)Pre-order, Inorder, Post-Order Traversal of a tree both using recursion
 
 # Data structure to store a binary tree node
 class Node:
