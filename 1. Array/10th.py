@@ -39,7 +39,7 @@ arr = [1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9 ]
 print(minJumps(arr))
 
 
-#Algo:
+#Algo:3
 # 1. Check if the first element of the array is equal to 0 if true then return -1.
 # 2. Set the maxValue and stepTaken to the first element of the given array.
 # 3. Set jumpTaken to 1.

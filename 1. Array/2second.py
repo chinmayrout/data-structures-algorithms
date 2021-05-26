@@ -6,11 +6,13 @@ class pair:
         self.min = 0
         self.max = 0
 
+
+# Initialize values of min and max as minimum and maximum of the first two elements respectively.
+# Starting from 3rd, compare each element with max and min, and change max and min accordingly
 def getMinMax(arr: list) -> pair:
     minmax = pair()
     n = len(arr)
     # If there is only one element then return it as min and max both
-
 
     if n == 1:
         minmax.max = arr[0]
@@ -32,12 +34,14 @@ def getMinMax(arr: list) -> pair:
         elif arr[i] < minmax.min:
             minmax.min = arr[i]
 
-
     return minmax
 
 
-def tournamentMinMax(low, high, arr):  #divide n conquer
-    
+
+
+# Divide the array into two parts and compare the maximums and minimums of the two parts to get the maximum and the minimum of the whole array.
+def tournamentMinMax(low, high, arr):  # divide n conquer
+
     arr_max = arr[low]
     arr_min = arr[low]
 
@@ -46,6 +50,7 @@ def tournamentMinMax(low, high, arr):  #divide n conquer
         arr_max = arr[low]
         arr_min = arr[low]
         return (arr_max, arr_min)
+
     #if there are only two elements
     elif high == low + 1:
         if arr[low] > arr[high]:
@@ -54,11 +59,11 @@ def tournamentMinMax(low, high, arr):  #divide n conquer
         else:
             arr_max = arr[high]
             arr_min = arr[low]
-        
-        return (arr_max, arr_min)
 
+        return (arr_max, arr_min)       #check indentation of return statement
+
+    #if there are more than 2 elements
     else:
-        #if there are more than 2 elements
         mid = int((low + high)/2)
         arr_max1, arr_min1 = tournamentMinMax(low, mid, arr)
         arr_max2, arr_min2 = tournamentMinMax(mid+1, high, arr)
@@ -67,14 +72,13 @@ def tournamentMinMax(low, high, arr):  #divide n conquer
 
 
 def compPairs(arr):
-    
+
     n = len(arr)
     #if array has even elements then initialize the first two elements as minimum and maximum
 
     if(n % 2 == 0):
         mx = max(arr[0], arr[1])
         mn = min(arr[0], arr[1])
-
 
         #set the starting index for loop
         i = 2
@@ -97,24 +101,25 @@ def compPairs(arr):
 
             #increment the index by 2 as two
             #elements are processed in a loop
-            i+=2
+            i += 2
 
-        return (mx,mn)
+        return (mx, mn)
+
 
 #Driver Code
 if __name__ == '__main__':
-    arr = [100,32,56,1,-1,200,5]
+    arr = [100, 32, 56, 1, -1, 200, 5]
     arr_size = len(arr)
-    low =0
+    low = 0
     high = arr_size - 1
     minmax = getMinMax(arr)
     print("Maximum element is:", minmax.max)
     print("Minimum element is:", minmax.min)
 
-    arr1 = [432,112,34,2,13,55,6]
+    arr1 = [432, 112, 34, 2, 13, 55, 6]
     print(arr1)
     arr_maxz, arr_minz = tournamentMinMax(low, high, arr1)
     print(arr_maxz)
     print(arr_minz)
-    mx, mn = compPairs(arr)     #using compare pairs method
-    print(mx,mn)
+    mx, mn = compPairs(arr)  # using compare pairs method
+    print(mx, mn)

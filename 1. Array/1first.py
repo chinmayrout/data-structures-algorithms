@@ -9,15 +9,17 @@ def reverseArray(A, start, end):
         start += 1
         end -=1
 
+
+
 #Recursive Python Program to reverse an array
 #Function to reverse A[] from start to end
-
 def reverseArray1(A, start, end):
     if(start >= end):
         return
     
     A[start], A[end] = A[end], A[start]
     reverseArray1(A, start+1, end-1)
+
 
 #Using Python Slicing
 def reverseArray2(A):

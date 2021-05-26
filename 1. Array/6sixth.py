@@ -18,7 +18,7 @@ def printUnion(arr1, arr2):
     print("Union:")
 
     for i in hs:
-        print(i, end= " ")
+        print(i, end= " ")      #https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/
     print("\n")
     #Prints union of arr1 and arr2
 
