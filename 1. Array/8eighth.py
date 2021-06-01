@@ -3,7 +3,7 @@
 # contiguous segments of the array (max_ending_here is used for this). 
 # And keep track of maximum sum contiguous segment among all positive segments (max_so_far is used for this). 
 # Each time we get a positive-sum compare it with max_so_far and update max_so_far if it is greater than max_so_far 
-
+# same as question 13
 def maxSubArraySum(arr):
 
     max_so_far = a[0]
