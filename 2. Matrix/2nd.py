@@ -1,6 +1,8 @@
-# Search an element in a matriix
+# Search an element in a matrix
+# https://leetcode.com/problems/search-a-2d-matrix/solution/
 
-def findRow(arr, noRows, noCols, k):
+
+def findRow(arr, noRows, noCols, k):    # k is the element to be searched
     l = 0
     r = noRows -1
     mid = 0
