@@ -16,3 +16,4 @@ def findRow(arr, noRows, noCols, k):    # k is the element to be searched
 
         if(k == arr[mid][noCols - 1]):     # Checking rightmost element
             t = noCols - 1
+            print("Found at (", mid, ",")
