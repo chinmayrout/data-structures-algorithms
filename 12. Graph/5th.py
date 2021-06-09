@@ -31,11 +31,11 @@ class Graph:
             if visited[i] == False:
                 if(self.isCyclicUtil(i, visited, v)):
                     return True
-                # If an adjacent vertex is visited and not parent of current vertex, then there is a cycle
-                elif parent != i:
-                    return True
+            # If an adjacent vertex is visited and not parent of current vertex, then there is a cycle
+            elif parent != i:
+                return True
             
-            return False
+        return False
 
     
     # Returns true if the graph contains cycle, else false
@@ -72,36 +72,11 @@ g1 = Graph(3)
 g1.addEdge(0, 1)
 g1.addEdge(1, 2)
 
-if g1. isCyclic():
+if g1.isCyclic():
     print("Graph contains cycle")
 
 else:
     print("Graph doesn't contain a cycle")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 '''
