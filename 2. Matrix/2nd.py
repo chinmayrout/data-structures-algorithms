@@ -2,18 +2,29 @@
 # https://leetcode.com/problems/search-a-2d-matrix/solution/
 
 
-def findRow(arr, noRows, noCols, k):    # k is the element to be searched
-    l = 0
-    r = noRows -1
-    mid = 0
-    while(l <= r):
-        mid = int((l + r) / 2)
+def findRow(matrix, k):    # k is the element to be searched
+    m = len(matrix)
+    if m == 0:
+        return False
+    n = len(matrix[0])
 
-        # we'll check the left and right most elements of the row here itself for efficiency
-        if(k == arr[mid][0]):     #Checking leftmost element
-            print("Found at(", mid , ",","0)", sep = "")
-            return
 
-        if(k == arr[mid][noCols - 1]):     # Checking rightmost element
-            t = noCols - 1
-            print("Found at (", mid, ",")
+    # binary Search
+    left, right = 0, m * n -1
+    while left <= right:
+        pivot_idx = (left + right) // 2
+        pivot_element = matrix[pivot_idx // n][pivot_idx % n]
+        if k == pivot_element:
+            return True
+        else:
+            if k < pivot_element:
+                right = pivot_idx - 1
+            else:
+                left = pivot_idx + 1
+
+    return False
+
+# Driver Code
+matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]]
+k  = 3
+print(findRow(matrix, k))

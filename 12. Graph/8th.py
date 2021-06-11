@@ -1,4 +1,6 @@
 # Flood Fill Algo using BFS
+# https://www.geeksforgeeks.org/flood-fill-algorithm/
+# https://www.geeksforgeeks.org/difference-between-flood-fill-and-boundary-fill-algorithm/
 '''
 Create an empty queue lets say Q.
 Push the starting location of the pixel as given in the input and apply replacement color to it.
