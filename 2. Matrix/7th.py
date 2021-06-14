@@ -10,7 +10,6 @@ N = 5
 # The function returns maximym calue of A[c, d] - A[a, b] over all choices
 # of indexes such that both c > a and d > b
 
-
 def findMaxValue(mat):
     # Stores max value
     maxValue = -sys.maxsize - 1
