@@ -19,7 +19,7 @@ class LinkedList:
     def reverse(self):
         prev = None
         current = self.head
-        while(current is not None):
+        while(current is not None):         # main goal is to point head.next to prev node
             next = current.next
             current.next = prev     #Main Algo
             prev = current
