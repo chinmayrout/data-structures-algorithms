@@ -1,6 +1,21 @@
 #Write a Program to reverse the Linked List. (Both Iterative and recursive)
-
+# https://www.geeksforgeeks.org/reverse-a-linked-list/
 # Iterative Approach
+
+'''
+1. Initialize three pointers prev as NULL, curr as head and next as NULL.
+2. Iterate through the linked list. In loop, do following. 
+// Before changing next of current, 
+// store next node 
+next = curr->next
+// Now change next of current 
+// This is where actual reversing happens 
+curr->next = prev 
+// Move prev and curr one step forward 
+prev = curr 
+curr = next
+
+'''
 
 # Linked-List Node
 class Node:
@@ -60,4 +75,14 @@ llist.printList()
 
 
 
-#TODO: Recursive Approach
+#================================================================================
+# Recursive Approach
+'''
+1) Divide the list in two parts - first node and rest of the linked list.
+2) Call reverse for the rest of the linked list.
+3) Link rest to first.
+4) Fix head pointer
+'''
+
+class Node1:
+
