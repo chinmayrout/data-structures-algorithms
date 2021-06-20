@@ -92,7 +92,7 @@ class Heap:
         self.array[i][1] = dist
 
         # Travel up while the complete tree is not heapified. THis is O(logn) loop
-        while i > 0 and self.array[i][1] < self.array[(i - 1) // 2][1]:
+        while i > 0 and self.array[i][1] < self.array[(i - 1) / 2][1]:
             # Swap this node with it's parent
             self.pos[self.array[i][0]] = (i - 1)/2
             self.pos[self.array[(i - 1)/2][0]] = i
