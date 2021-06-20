@@ -40,4 +40,4 @@
 33. Minimum swaps required bring elements less equal K together
 34. Minimum no. of operations required to make an array palindrome
 35. Median of 2 sorted arrays of equal size
-36. Median of 2 sorted arrays of different sizeImport a HTML file and watch it magically convert to Markdown
+36. Median of 2 sorted arrays of different size
