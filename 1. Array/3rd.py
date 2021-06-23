@@ -1,4 +1,4 @@
-#K’th Smallest/Largest Element in Unsorted Array
+# K’th Smallest/Largest Element in Unsorted Array
 
 def sol1(array, k):
 

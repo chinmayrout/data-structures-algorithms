@@ -1,4 +1,7 @@
 #Maximum and minimum of an array using minimum number of comparisons
+# https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
+
+#=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
 
 #Simple Linear Search
 class pair:
@@ -36,6 +39,7 @@ def getMinMax(arr: list) -> pair:
 
     return minmax
 
+#=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
 
 
 
@@ -70,8 +74,8 @@ def tournamentMinMax(low, high, arr):  # divide n conquer
 
         return (max(arr_max1, arr_max2), min(arr_min1, arr_min2))
 
-
-def compPairs(arr):
+#=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+def compPairs(arr):     # Best method
 
     n = len(arr)
     #if array has even elements then initialize the first two elements as minimum and maximum

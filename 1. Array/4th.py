@@ -1,5 +1,5 @@
-#Given an array which consists of only 0, 1 and 2. Sort the array without using any sorting algo
-
+# Given an array which consists of only 0, 1 and 2. Sort the array without using any sorting algo
+# https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
 def sol1(array):
 
     low = 0
