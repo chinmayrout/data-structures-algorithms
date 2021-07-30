@@ -1,4 +1,4 @@
-###Heaps
+##Heaps
 ## Heaps are advanced data structures that are useful in applications such as sorting and implementing priority queues. They are regular binary trees with two special properties
 
 Heaps must be Complete Binary Trees #
