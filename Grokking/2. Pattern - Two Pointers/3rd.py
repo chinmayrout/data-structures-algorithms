@@ -20,5 +20,4 @@ def make_squares(arr):
 
 # Driver Code
 arr = [-4,-1,0,3,10]
-
 print(make_squares(arr))
