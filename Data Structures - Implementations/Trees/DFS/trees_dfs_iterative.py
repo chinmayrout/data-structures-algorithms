@@ -121,4 +121,5 @@ if __name__ == '__main__':
     print("\nInorder (Left->Root->Right)")
     inorderIterative(root)
     print("\nPostorder (Left->Right->Root)")
+
     postorderIterative(root)
