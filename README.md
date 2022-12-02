@@ -1,3 +1,5 @@
-### DATA STRUCTURES AND ALGORITHMS!
- Practice Questions
- Done in Python Mostly and Java sometimes; :P
+### Data Structures and Algorithms Implementations in Python
+
+1. [Data Structures](#data-structures)
+2. [Algorithms](#algorithms)
+
